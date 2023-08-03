@@ -1,0 +1,33 @@
+.header__input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    height: 28px;
+    outline: none;
+    padding: 0;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+    opacity: 50%;
+}
+:-moz-placeholder {
+   color: white;
+   opacity: 50%;
+}
+::-moz-placeholder {
+    color: white;
+    opacity: 50%;
+}
+:-ms-input-placeholder {
+    color: white;
+    opacity: 50%;
+}
+::-ms-input-placeholder {
+    color: white;
+    opacity: 50%;
+}
+::placeholder {
+    color: white;
+    opacity: 50%;
+}

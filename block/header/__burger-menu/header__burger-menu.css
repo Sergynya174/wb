@@ -1,0 +1,10 @@
+.header__burger-menu{
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-image: url(../../../image/burger-menu.svg);
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+    background-size: contain;
+}

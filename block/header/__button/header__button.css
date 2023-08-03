@@ -1,0 +1,13 @@
+.header__button{
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 0;
+}
+
+.header__button:first-of-type{
+    margin-right: 40px;
+}
