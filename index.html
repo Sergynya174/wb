@@ -29,7 +29,62 @@
         <div class="header__bg"></div>
     </header>
     <main class="main">
-        <section></section>
+        <section class="basket">
+            <h2 class="basket__title">Корзина</h2>
+            <div class="basket__container">
+                <div class="basket__availability">
+                    <div class="basket__container-checkbox">
+                        <div class="basket__container-label">
+                            <input class="basket__checkbox" type="checkbox">
+                            <label class="basket__label">Выбрать все</label>
+                        </div>
+                        <img class="basket__arrow" src="./image/arrow.svg" alt="arrow">
+                    </div>
+                    <div class="basket__products">
+                        <article class="basket__product">
+                            <div class="basket__product-data">
+                                <div class="basket__container-img">
+                                    <input class="basket__checkbox" type="checkbox">
+                                    <img class="basket__img" src="./image/foto1.svg" alt="">
+                                </div>
+                                <div>
+                                    <h2 class="basket__product-title">Футболка UZcotton мужская</h2>
+                                    <div class="basket__specifications">
+                                        <p class="basket__text basket__text_margin-right">Цвет: белый</p>
+                                        <p class="basket__text">Размер: 56</p>
+                                    </div>
+                                    <div class="">
+                                        <p class="basket__text basket__text_store">Коледино WB</p>
+                                        <div class="basket__container-organization">
+                                            <p class="basket__text basket__text_store-organization">OOO Вайлдберриз</p>
+                                            <span class="basket__help"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__info">
+                                <div class="basket__count-container">
+                                    <div class="basket__count">
+                                        <button class="basket__button-count basket__button-count_minus"></button>
+                                        <p class="basket__count-number">1</p>
+                                        <button class="basket__button-count basket__button-count_plus"></button>
+                                    </div>
+                                    <span class="basket__text basket__text_red">Осталось 2 шт.</span>
+                                    <div class="basket__button-container">
+                                        <button class="basket__button basket__button_like"></button>
+                                        <button class="basket__button basket__button_delete"></button>
+                                    </div>
+                                </div>
+                                <div class="basket__container-price">
+                                        <p class="basket__price-new">522 <span class="basket__price-span">com</span></p>
+                                    <del class="basket__price">1051 сом</del>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section></section>
     </main>
     <footer class="footer"></footer>

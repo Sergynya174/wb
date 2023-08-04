@@ -1,0 +1,10 @@
+.basket__count{
+    display: flex;
+    width: 100px;
+    height: 44px;
+    border-radius: 8px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}

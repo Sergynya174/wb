@@ -1,0 +1,5 @@
+.basket__button-container{
+    display: flex;
+    justify-content: end;
+    margin-top: 8px;
+}

@@ -1,0 +1,8 @@
+.basket__checkbox{
+    width: 22px;
+    height: 22px;
+    accent-color: #CB11AB;
+    margin-right: 11px;
+    border-radius: 50%;
+    cursor: pointer;
+}

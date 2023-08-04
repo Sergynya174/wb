@@ -1,0 +1,6 @@
+.basket__container-price{
+    min-width: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}

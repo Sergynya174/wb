@@ -1,0 +1,6 @@
+.basket__button_like{
+    background-image: url(../../../../image/like.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 16px;
+}
