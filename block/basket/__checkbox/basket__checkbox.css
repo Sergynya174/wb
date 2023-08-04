@@ -5,4 +5,6 @@
     margin-right: 11px;
     border-radius: 50%;
     cursor: pointer;
+    display: flex;
+    align-self: center;
 }
