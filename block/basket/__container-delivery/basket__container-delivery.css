@@ -1,0 +1,6 @@
+.basket__container-delivery{
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    margin: 0 0 16px 0;
+}

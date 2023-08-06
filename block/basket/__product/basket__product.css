@@ -3,4 +3,5 @@
     margin-bottom: 20px;
     padding: 12px 0 0;
     max-width: 640px;
+    justify-content: space-between;
 }

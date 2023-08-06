@@ -4,7 +4,8 @@
     cursor: pointer;
     background-image: url(../../../image/burger-menu.svg);
     background-repeat: no-repeat;
-    width: 48px;
+    min-width: 48px;
     height: 48px;
     background-size: contain;
+    padding: 0;
 }

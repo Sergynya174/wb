@@ -1,0 +1,10 @@
+.basket__decoration{
+    background-color: white;
+    border-radius: 16px;
+    padding: 16px 24px;
+    margin-bottom: 16px;
+}
+
+.basket__decoration:last-of-type{
+    margin: 0;
+}

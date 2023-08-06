@@ -51,3 +51,17 @@
 @import url(./block/basket/__price/basket__price.css);
 @import url(./block/basket/__price-new/basket__price-new.css);
 @import url(./block/basket/__price-span/basket__price-span.css);
+@import url(./block/basket/__article-header/basket__article-header.css);
+@import url(./block/basket/__img/_color/basket__img_color.css);
+@import url(./block/basket/__text/_color/basket__text_color.css);
+@import url(./block/basket/__decoration/basket__decoration.css);
+@import url(./block/basket/__container-delivery/basket__container-delivery.css);
+@import url(./block/basket/__info-delivery/basket__info-delivery.css);
+@import url(./block/basket/__subtitle/basket__subtitle.css);
+@import url(./block/basket/__change/basket__change.css);
+@import url(./block/basket/__refund-info/basket__refund-info.css);
+@import url(./block/basket/__text-delivery/basket__text-delivery.css);
+@import url(./block/basket/__text/_green/basket__text_green.css);
+@import url(./block/basket/__payment-sistem/basket__payment-sistem.css);
+@import url(./block/basket/__text-payment/basket__text-payment.css);
+@import url(./block/basket/__payment-number/basket__payment-number.css);

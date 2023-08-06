@@ -1,0 +1,10 @@
+.basket__change{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #CB11AB;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 0;
+}
