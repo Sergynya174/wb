@@ -235,33 +235,32 @@
                     </div>
                     <div class="basket__info-delivery">
                         <div class="basket__data-delivery">
-                            <p>Пункт выдачи</p>
-                            <p>Стоимость доставки</p>
-                            <p>5—6 февраля</p>
-                            <p>7—8 февраля</p>
+                            <p class="basket__article-header basket__margin_bottom-16">Пункт выдачи</p>
+                            <p class="basket__article-header basket__margin_bottom-16">Стоимость доставки</p>
+                            <p class="basket__article-header basket__margin_bottom-16">5—6 февраля</p>
+                            <p class="basket__article-header basket__margin_bottom-16">7—8 февраля</p>
                         </div>
                         <div class="basket__item-delivery">
                             <div>
-                                <p>Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
-                                <div>
-                                    <img src="" alt="">
-                                    <p>4.99</p>
-                                    <p>Ежедневно с 10 до 21 </p>
+                                <p class="basket__product-title basket__margin_bottom-4">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+                                <div class="basket__container-star">
+                                    <img src="./image/star.svg" alt="star">
+                                    <p class="basket__text-payment basket__margin_left-4">4.99</p>
+                                    <p class="basket__text-delivery">Ежедневно с 10 до 21 </p>
                                 </div>
                             </div>
-                            <p>Бесплатно</p>
+                            <p class="basket__product-title">Бесплатно</p>
                             <div class="basket__cintainer-img">
-                                <img src="" alt="">
-                                <img src="" alt="">
-                                <img src="" alt="">
-                                <img src="" alt="">
+                                <img src="./image/foto1.svg" alt="">
+                                <img src="./image/foto3.svg" alt="">
+                                <img src="./image/foto2.svg" alt="">
+                                <img src="./image/foto3.svg" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="basket__refund-info">
                         <img src="./image/check-mark.svg" alt="check mark">
-                        <p class="basket__text-delivery">Обратная доставка товаров на склад при отказе — </p>
-                        <p class="basket__text-delivery basket__text_green">бесплатно</p>
+                        <p class="basket__text-delivery">Обратная доставка товаров на склад при отказе —<span class="basket__text-delivery basket__text_green">бесплатно</span></p>
                     </div>
                 </div>
             </div>
@@ -280,20 +279,83 @@
                 <div class="basket__container-delivery">
                     <h2 class="basket__subtitle">Получатель</h2>
                 </div>
-                <div>
-                    <input type="text" placeholder="Имя">
-                    <input type="text" placeholder="Фамилия">
+                <div class="basket__container-input basket__container-input_name">
+                    <input class="basket__input" type="text" placeholder="Имя">
+                    <input class="basket__input" type="text" placeholder="Фамилия">
                 </div>
-                <div>
-                    <input type="text" placeholder="Почта">
-                    <input type="text" placeholder="Телефон">
-                    <input type="text" placeholder="ИНН">
+                <div class="basket__container-input basket__container-input_mail">
+                    <input class="basket__input" type="email" placeholder="Почта">
+                    <input class="basket__input" type="text" placeholder="Телефон">
+                    <div>
+                        <input class="basket__input" type="text" placeholder="ИНН">
+                        <p class="basket__input-text">Для таможенного оформления</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section></section>
+        <section class="total">
+            <div>
+                <div class="total__sum">
+                    <div class="total__container-subtitle">
+                        <h2 class="total__subtitle">Итого</h2>
+                        <h2 class="total__subtitle">2 101 063 <span class="total__span">сом</span></h2>
+                    </div>
+                    <div class="total__container-text">
+                        <p class="total__text">203 товара</p>
+                        <p class="total__text">2 302 048 сом</p>
+                    </div>
+                    <div class="total__container-text">
+                        <p class="total__text">Скидка</p>
+                        <p class="total__text">-200 985 сом</p>
+                    </div>
+                    <div class="total__container-text">
+                        <p class="total__text">Доставка</p>
+                        <p class="total__text">Бесплатно</p>
+                    </div>
+                </div>
+                <div class="total__sum">
+                    <div class="total__container-title">
+                        <h4 class="total__article-header">Доставка в пункт выдачи</h4>
+                        <button class="total__button-pen"></button>
+                    </div>
+                    <p class="basket__text-delivery basket__margin_bottom-4">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+                    <p class="total__date">5–8 фев</p>
+                    <div class="total__refund-info">
+                        <img src="./image/check-mark.svg" alt="check mark">
+                        <p class="basket__text-delivery">Обратная доставка товаров на склад при отказе —<span class="basket__text-delivery basket__text_green">бесплатно</span></p>
+                    </div>
+                </div>
+                <div class="total__sum">
+                    <div class="total__container-title">
+                        <h4 class="total__article-header">Оплата картой</h4>
+                        <button class="total__button-pen"></button>
+                    </div>
+                    <div class="total__payment-sistem">
+                        <img src="./image/payment-system.svg" alt="payment system">
+                        <p class="total__payment-number">1234 56•• •••• 1234 01/30</p>
+                    </div>
+                    <div class="total__container">
+                        <div class="total__container-checkbox total__container-checkbox_center">
+                            <input class="basket__checkbox basket__margin_right-8" type="checkbox">
+                            <p class="basket__text-delivery basket__margin_0">Списать оплату сразу</p>
+                        </div>
+                        <p class="basket__text-delivery basket__margin_0">Спишем оплату с карты при получении</p>
+                    </div>
+                </div>
+            </div>
+            <div class="total__button-container">
+                <button class="total__button">Заказать</button>
+                <div class="total__container-checkbox basket__margin_0">
+                    <input class="total__checkbox" type="checkbox">
+                    <p class="basket__text-delivery">Соглашаюсь с правилами пользования торговой площадкой и возврата</p>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="footer__bg"></div>
+        <p class="footer__text">© 2022  ООО «Товары и точка»</p>
+    </footer>
     <script src='./script/script.js'></script>
 </body>
 </html>

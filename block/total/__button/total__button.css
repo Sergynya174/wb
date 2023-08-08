@@ -1,0 +1,11 @@
+.total__button{
+    background-color: #CB11AB;
+    width: 100%;
+    border: none;
+    height: 44px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 12px;
+}

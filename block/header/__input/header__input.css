@@ -7,27 +7,27 @@
     padding: 0;
 }
 
-::-webkit-input-placeholder {
+.header__input::-webkit-input-placeholder {
     color: white;
     opacity: 50%;
 }
-:-moz-placeholder {
+.header__input:-moz-placeholder {
    color: white;
    opacity: 50%;
 }
-::-moz-placeholder {
+.header__input::-moz-placeholder {
     color: white;
     opacity: 50%;
 }
-:-ms-input-placeholder {
+.header__input:-ms-input-placeholder {
     color: white;
     opacity: 50%;
 }
-::-ms-input-placeholder {
+.header__input::-ms-input-placeholder {
     color: white;
     opacity: 50%;
 }
-::placeholder {
+.header__input::placeholder {
     color: white;
     opacity: 50%;
 }

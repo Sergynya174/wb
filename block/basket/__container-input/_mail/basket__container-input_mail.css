@@ -1,0 +1,3 @@
+.basket__container-input_mail{
+    grid-template-columns: repeat(3, 1fr);
+}

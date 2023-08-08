@@ -1,0 +1,43 @@
+.basket__input{
+    border: none;
+    border-bottom: 1px solid rgba(00, 00, 00, 20%);
+    outline: none;
+    padding: 0 0 4px 0;
+}
+
+.basket__input::-webkit-input-placeholder {
+    color: #9797AF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.basket__input:-moz-placeholder {
+   color: #9797AF;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+}
+.basket__input::-moz-placeholder {
+    color: #9797AF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.basket__input:-ms-input-placeholder {
+    color: #9797AF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.basket__input::-ms-input-placeholder {
+    color: #9797AF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.basket__input::placeholder {
+    color: #9797AF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}

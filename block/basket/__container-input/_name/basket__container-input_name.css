@@ -1,0 +1,3 @@
+.basket__container-input_name{
+    grid-template-columns: repeat(2, 50%);
+}

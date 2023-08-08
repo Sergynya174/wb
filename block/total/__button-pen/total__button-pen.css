@@ -1,0 +1,10 @@
+.total__button-pen{
+    background-image: url(../../../image/pen.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+}
