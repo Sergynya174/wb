@@ -2,6 +2,11 @@
     display: flex;
     margin-bottom: 20px;
     padding: 12px 0 0;
-    max-width: 640px;
     justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+    .basket__product {
+      flex-direction: column;
+    }
 }

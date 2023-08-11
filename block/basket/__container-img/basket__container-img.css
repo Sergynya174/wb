@@ -1,5 +1,12 @@
 .basket__container-img{
     display: flex;
     margin-right: 16px;
-    max-height: 96px;
+    height: 96px;
+}
+
+@media (max-width: 1024px) {
+    .basket__container-img {
+      height: 106px;
+      position: relative;
+    }
 }

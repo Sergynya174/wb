@@ -5,3 +5,10 @@
      align-items: center;
      height: 88px;
 }
+
+@media (max-width: 1024px) {
+    .header__container {
+        height: 56px;
+        padding: 14px;
+    }
+}

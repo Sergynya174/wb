@@ -1,0 +1,9 @@
+.basket__product-container{
+    max-width: 309px;
+}
+
+@media (max-width: 1024px) {
+    .basket__product-container {
+      max-width: 192px;
+    }
+}

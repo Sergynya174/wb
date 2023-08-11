@@ -4,3 +4,10 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@media (max-width: 1024px) {
+    .basket__container-checkbox {
+      margin-bottom: 17px;
+      position: relative;
+    }
+}

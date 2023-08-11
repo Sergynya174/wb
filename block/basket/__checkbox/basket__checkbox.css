@@ -8,3 +8,11 @@
     display: flex;
     align-self: center;
 }
+
+@media (max-width: 1024px) {
+    .basket__checkbox {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+    }
+}

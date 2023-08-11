@@ -4,8 +4,18 @@
     cursor: pointer;
     background-image: url(../../../image/burger-menu.svg);
     background-repeat: no-repeat;
-    min-width: 48px;
+    width: 48px;
     height: 48px;
-    background-size: contain;
+    background-position: center;
     padding: 0;
+    background-size: contain;
+}
+
+@media (max-width: 1024px) {
+    .header__burger-menu {
+      background-image: url(../../../image/burger-menu-320.svg);
+      width: 28px;
+      height: 28px;
+      background-size: none;
+    }
 }

@@ -25,6 +25,7 @@
                     <p class="header__text">Корзина</p>
                 </button>
             </div>
+            <button class="header__magnifier"></button>
         </div>
         <div class="header__bg"></div>
     </header>
@@ -35,7 +36,7 @@
                 <div class="basket__availability">
                     <div class="basket__container-checkbox">
                         <div class="basket__container-label">
-                            <input class="basket__checkbox" type="checkbox">
+                            <input class="basket__checkbox basket__checkbox_position" type="checkbox">
                             <label class="basket__label">Выбрать все</label>
                         </div>
                         <img class="basket__arrow" src="./image/arrow.svg" alt="arrow">
@@ -47,7 +48,7 @@
                                     <input class="basket__checkbox" type="checkbox">
                                     <img class="basket__img" src="./image/foto1.svg" alt="foto">
                                 </div>
-                                <div>
+                                <div class="basket__product-container">
                                     <h2 class="basket__product-title">Футболка UZcotton мужская</h2>
                                     <div class="basket__specifications">
                                         <p class="basket__text basket__text_margin-right">Цвет: белый</p>
@@ -87,7 +88,7 @@
                                     <input class="basket__checkbox" type="checkbox">
                                     <img class="basket__img" src="./image/foto3.svg" alt="foto">
                                 </div>
-                                <div>
+                                <div class="basket__product-container">
                                     <h2 class="basket__product-title">Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</h2>
                                     <div class="basket__specifications">
                                         <p class="basket__text basket__text_margin-right">Цвет: прозрачный</p>
@@ -114,7 +115,7 @@
                                     </div>
                                 </div>
                                 <div class="basket__container-price">
-                                        <p class="basket__price-new">2 100 047 <span class="basket__price-span">com</span></p>
+                                        <p class="basket__price-new basket__price-new_size">2 100 047 <span class="basket__price-span">com</span></p>
                                     <del class="basket__price">2 300 047 сом</del>
                                 </div>
                             </div>
@@ -125,7 +126,7 @@
                                     <input class="basket__checkbox" type="checkbox">
                                     <img class="basket__img" src="./image/foto2.svg" alt="foto">
                                 </div>
-                                <div>
+                                <div class="basket__product-container">
                                     <h2 class="basket__product-title">Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные,Faber-Castell</h2>
                                     <div>
                                         <p class="basket__text basket__text_store">Коледино WB</p>
@@ -150,8 +151,8 @@
                                     </div>
                                 </div>
                                 <div class="basket__container-price">
-                                        <p class="basket__price-new">522 <span class="basket__price-span">com</span></p>
-                                    <del class="basket__price">1051 сом</del>
+                                        <p class="basket__price-new">494 <span class="basket__price-span">com</span></p>
+                                    <del class="basket__price">950 сом</del>
                                 </div>
                             </div>
                         </article>
@@ -169,7 +170,7 @@
                             <div class="basket__container-img basket__img_color">
                                 <img class="basket__img" src="./image/foto1.svg" alt="foto">
                             </div>
-                            <div>
+                            <div class="basket__product-container">
                                 <h2 class="basket__product-title basket__text_color">Футболка UZcotton мужская</h2>
                                 <div class="basket__specifications">
                                     <p class="basket__text basket__text_margin-right basket__text_color">Цвет: белый</p>
@@ -178,7 +179,7 @@
                             </div>
                         </div>
                         <div class="basket__info">
-                            <div class="basket__count-container">
+                            <div class="basket__count-container basket__margin_0">
                                 <div class="basket__button-container">
                                     <button class="basket__button basket__button_like"></button>
                                     <button class="basket__button basket__button_delete"></button>
@@ -191,7 +192,7 @@
                             <div class="basket__container-img">
                                 <img class="basket__img basket__img_color" src="./image/foto3.svg" alt="foto">
                             </div>
-                            <div>
+                            <div class="basket__product-container">
                                 <h2 class="basket__product-title basket__text_color">Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</h2>
                                 <div class="basket__specifications">
                                     <p class="basket__text basket__text_margin-right basket__text_color">Цвет: прозрачный</p>
@@ -199,7 +200,7 @@
                             </div>
                         </div>
                         <div class="basket__info">
-                            <div class="basket__count-container">
+                            <div class="basket__count-container basket__margin_0">
                                 <div class="basket__button-container">
                                     <button class="basket__button basket__button_like"></button>
                                     <button class="basket__button basket__button_delete"></button>
@@ -212,12 +213,12 @@
                             <div class="basket__container-img">
                                 <img class="basket__img basket__img_color" src="./image/foto2.svg" alt="foto">
                             </div>
-                            <div>
+                            <div class="basket__product-container">
                                 <h2 class="basket__product-title basket__text_color">Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные,Faber-Castell</h2>
                             </div>
                         </div>
                         <div class="basket__info">
-                            <div class="basket__count-container">
+                            <div class="basket__count-container basket__margin_0">
                                 <div class="basket__button-container">
                                     <button class="basket__button basket__button_like"></button>
                                     <button class="basket__button basket__button_delete"></button>
@@ -275,23 +276,38 @@
                 </div>
                 <p class="basket__text-payment basket__text_color">Спишем оплату с карты при получении</p>
             </div>
-            <div class="basket__decoration">
+            <form class="basket__decoration basket__margin_0">
                 <div class="basket__container-delivery">
                     <h2 class="basket__subtitle">Получатель</h2>
                 </div>
                 <div class="basket__container-input basket__container-input_name">
-                    <input class="basket__input" type="text" placeholder="Имя">
-                    <input class="basket__input" type="text" placeholder="Фамилия">
+                    <div class="basket__input-container">
+                        <input class="basket__input" type="text" id="name">
+                        <label class="basket__label-input" for="name">Имя</label>
+                    </div>
+                    <div class="basket__input-container">
+                        <input class="basket__input" type="text" id="surname">
+                        <label class="basket__label-input" for="surname">Фамилия</label>
+                    </div>
                 </div>
                 <div class="basket__container-input basket__container-input_mail">
-                    <input class="basket__input" type="email" placeholder="Почта">
-                    <input class="basket__input" type="text" placeholder="Телефон">
-                    <div>
-                        <input class="basket__input" type="text" placeholder="ИНН">
+                    <div class="basket__input-container">
+                        <input class="basket__input" type="email" id="email">
+                        <label class="basket__label-input" for="email">Почта</label>
+                    </div>
+                    <div class="basket__input-container">
+                        <input class="basket__input" type="text" id="number">
+                        <label class="basket__label-input" for="number">Телефон</label>
+                    </div>
+                    <div class="basket__input-container">
+                        <div class="basket__inn-container">
+                            <input class="basket__input" type="text" id="inn">
+                            <label class="basket__label-input" for="inn">ИНН</label>
+                        </div>
                         <p class="basket__input-text">Для таможенного оформления</p>
                     </div>
                 </div>
-            </div>
+            </form>
         </section>
         <section class="total">
             <div>

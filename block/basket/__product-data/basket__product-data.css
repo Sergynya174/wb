@@ -3,3 +3,9 @@
     margin-right: 17px;
     min-width: 397px;
 }
+
+@media (max-width: 1024px) {
+    .basket__product-data {
+      min-width: 288px;
+    }
+}

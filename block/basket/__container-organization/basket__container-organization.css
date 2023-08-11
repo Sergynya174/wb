@@ -1,3 +1,9 @@
 .basket__container-organization{
     display: flex;
 }
+
+@media (max-width: 1024px) {
+    .basket__container-organization {
+      display: none;
+    }
+}

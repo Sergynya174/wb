@@ -12,6 +12,7 @@
 @import url(./block/header/__button/header__button.css);
 @import url(./block/header/__container-button/header__container-button.css);
 @import url(./block/header/__text/header__text.css);
+@import url(./block/header/__magnifier/header__magnifier.css);
 @import url(./block/header/__bg/header__bg.css);
 @import url(./block/main/main.css);
 @import url(./block/basket/basket.css);
@@ -20,10 +21,12 @@
 @import url(./block/basket/__container-checkbox/basket__container-checkbox.css);
 @import url(./block/basket/__container-label/basket__container-label.css);
 @import url(./block/basket/__checkbox/basket__checkbox.css);
+@import url(./block/basket/__checkbox/_position/basket__checkbox_position.css);
 @import url(./block/basket/__text/basket__label.css);
 @import url(./block/basket/__arrow/basket__arrow.css);
 @import url(./block/basket/__products/basket__products.css);
 @import url(./block/basket/__container-img/basket__container-img.css);
+@import url(./block/basket/__product-container/basket__product-container.css);
 @import url(./block/basket/__product/basket__product.css);
 @import url(./block/basket/__product-data/basket__product-data.css);
 @import url(./block/basket/__product-title/basket__product-title.css);
@@ -50,6 +53,7 @@
 @import url(./block/basket/__container-price/basket__container-price.css);
 @import url(./block/basket/__price/basket__price.css);
 @import url(./block/basket/__price-new/basket__price-new.css);
+@import url(./block/basket/__price-new/_size/basket__price-new_size.css);
 @import url(./block/basket/__price-span/basket__price-span.css);
 @import url(./block/basket/__article-header/basket__article-header.css);
 @import url(./block/basket/__img/_color/basket__img_color.css);
@@ -68,8 +72,10 @@
 @import url(./block/basket/__container-star/basket__container-star.css);
 @import url(./block/basket/__data-delivery/basket__data-delivery.css);
 @import url(./block/basket/__input/basket__inpyt.css);
+@import url(./block/basket/__label-input/basket__label-input.css);
 @import url(./block/basket/__input-text/basket__input-text.css);
 @import url(./block/basket/__container-input/basket__container-input.css);
+@import url(./block/basket/__input-container/basket__input-container.css);
 @import url(./block/basket/__container-input/_name/basket__container-input_name.css);
 @import url(./block/basket/__container-input/_mail/basket__container-input_mail.css);
 @import url(./block/total/total.css);
