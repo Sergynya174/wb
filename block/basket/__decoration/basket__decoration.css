@@ -1,6 +1,12 @@
 .basket__decoration{
     background-color: white;
     border-radius: 16px;
-    padding: 16px 24px;
+    padding: 16px 16px 24px;
     margin-bottom: 16px;
+}
+
+@media (max-width: 1024px) {
+    .basket__decoration {
+      margin-bottom: 12px;
+    }
 }

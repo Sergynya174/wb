@@ -4,3 +4,9 @@
     flex-direction: column;
     align-items: end;
 }
+
+@media (max-width: 1024px) {
+    .basket__container-price {
+      display: none;
+    }
+}

@@ -1,3 +1,9 @@
 .basket__products{
     border-top: 1px solid rgba(00, 00, 00, 10%);
 }
+
+@media (max-width: 1024px) {
+    .basket__products {
+      border: none;
+    }
+}

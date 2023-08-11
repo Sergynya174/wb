@@ -8,3 +8,11 @@
     box-sizing: border-box;
     margin-top: -5px;
 }
+
+@media (max-width: 1024px) {
+    .total {
+      padding: 8px 16px 0 16px;
+      background-color: #F6F6FA;
+      border-radius: 0;
+    }
+}

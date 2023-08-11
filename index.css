@@ -67,6 +67,7 @@
 @import url(./block/basket/__text-delivery/basket__text-delivery.css);
 @import url(./block/basket/__text/_green/basket__text_green.css);
 @import url(./block/basket/__payment-sistem/basket__payment-sistem.css);
+@import url(./block/basket/__payment-number-span/basket__payment-number-span.css);
 @import url(./block/basket/__text-payment/basket__text-payment.css);
 @import url(./block/basket/__payment-number/basket__payment-number.css);
 @import url(./block/basket/__container-star/basket__container-star.css);

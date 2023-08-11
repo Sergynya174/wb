@@ -8,3 +8,11 @@
     justify-content: center;
     margin-bottom: 8px;
 }
+
+@media (max-width: 1024px) {
+    .basket__count {
+      margin: 0 16px 0 0;
+      width: 80px;
+      height: 32px;
+    }
+}

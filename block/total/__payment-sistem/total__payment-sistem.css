@@ -3,3 +3,9 @@
     align-items: center;
     margin-bottom: 12px;
 }
+
+@media (max-width: 1024px) {
+    .total__payment-sistem {
+        display: none;
+    }
+}

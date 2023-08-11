@@ -8,5 +8,6 @@
 @media (max-width: 1024px) {
     .basket__product {
       flex-direction: column;
+      border-top: 1px solid rgba(00, 00, 00, 10%);
     }
 }

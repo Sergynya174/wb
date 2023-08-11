@@ -1,3 +1,11 @@
 .basket__container-input_name{
     grid-template-columns: repeat(2, 1fr);
 }
+
+@media (max-width: 1024px) {
+    .basket__container-input_name {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 16px;
+    }
+}

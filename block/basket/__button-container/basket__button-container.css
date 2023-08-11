@@ -3,3 +3,9 @@
     justify-content: end;
     margin-top: 8px;
 }
+
+@media (max-width: 1024px) {
+    .basket__button-container {
+        margin: 0 0 0 16px;
+    }
+}

@@ -4,3 +4,9 @@
     line-height: 32px;
     margin: 0;
 }
+@media (max-width: 1024px) {
+    .basket__subtitle {
+      font-size: 20px;
+      line-height: 28px;
+    }
+}

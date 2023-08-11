@@ -5,3 +5,10 @@
     margin: 0;
     letter-spacing: -1px;
 }
+
+@media (max-width: 1024px) {
+    .total__subtitle {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}

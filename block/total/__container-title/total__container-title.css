@@ -4,3 +4,9 @@
     margin-bottom: 4px;
     align-items: center;
 }
+
+@media (max-width: 1024px) {
+    .total__container-title {
+        display: none;
+    }
+}
