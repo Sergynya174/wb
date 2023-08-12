@@ -6,6 +6,6 @@
     width: 100%;
 }
 
-.basket__input:focus + .basket__label-input{
+.basket__input:focus + .basket__label-input, .basket__input:not(:placeholder-shown) + .basket__label-input{
     transform: translateY(-1em) scale(0.9);
 }
