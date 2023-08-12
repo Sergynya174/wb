@@ -1,0 +1,15 @@
+.tabbar{
+    height: 56px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px;
+    box-sizing: border-box;
+    display: none;
+}
+
+@media (max-width: 1020px) {
+    .tabbar {
+      display: flex;
+    }
+}

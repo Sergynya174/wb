@@ -5,7 +5,7 @@
     align-items: end;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1020px) {
     .basket__container-price {
       display: none;
     }

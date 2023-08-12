@@ -1,8 +1,8 @@
 .basket__product-container{
-    max-width: 309px;
+    max-width: 275px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1020px) {
     .basket__product-container {
       max-width: 192px;
       position: relative;

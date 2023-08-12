@@ -39,20 +39,23 @@
                             <input class="basket__checkbox basket__checkbox_position" type="checkbox">
                             <label class="basket__label">Выбрать все</label>
                         </div>
-                        <img class="basket__arrow" src="./image/arrow.svg" alt="arrow">
+                        <img class="basket__arrow" id="arrowOne" src="./image/arrow-top.svg" alt="arrow">
                     </div>
-                    <div class="basket__products">
+                    <div class="basket__products" id="one-products">
                         <article class="basket__product">
                             <div class="basket__product-data">
                                 <div class="basket__container-img">
                                     <input class="basket__checkbox" type="checkbox">
                                     <img class="basket__img" src="./image/foto1.svg" alt="foto">
+                                    <div class="basket__size">
+                                        <p class="basket__text-size">56</p>
+                                    </div>
                                 </div>
                                 <div class="basket__product-container">
                                     <h2 class="basket__product-title">Футболка UZcotton мужская</h2>
                                     <div class="basket__specifications">
                                         <p class="basket__text basket__text_margin-right">Цвет: белый</p>
-                                        <p class="basket__text">Размер: 56</p>
+                                        <p class="basket__text basket__text_visible">Размер: 56</p>
                                     </div>
                                     <div>
                                         <p class="basket__text basket__text_store">Коледино WB</p>
@@ -159,22 +162,25 @@
                     </div>
                 </div>
             </div>
-            <div class="basket__container">
+            <div class="basket__container" id="two_container">
                 <div class="basket__container-checkbox">
                     <h3 class="basket__article-header">Отсутствуют 3 товара</h3>
-                    <img class="basket__arrow" src="./image/arrow.svg" alt="arrow">
+                    <img class="basket__arrow" id="arrowTwo" src="./image/arrow-top.svg" alt="arrow">
                 </div>
-                <div class="basket__products">
+                <div class="basket__products" id="two-products">
                     <article class="basket__product">
                         <div class="basket__product-data">
                             <div class="basket__container-img basket__img_color">
                                 <img class="basket__img" src="./image/foto1.svg" alt="foto">
+                                <div class="basket__size">
+                                    <p class="basket__text-size">56</p>
+                                </div>
                             </div>
                             <div class="basket__product-container">
                                 <h2 class="basket__product-title basket__text_color">Футболка UZcotton мужская</h2>
                                 <div class="basket__specifications">
                                     <p class="basket__text basket__text_margin-right basket__text_color">Цвет: белый</p>
-                                    <p class="basket__text basket__text_color">Размер: 56</p>
+                                    <p class="basket__text basket__text_color basket__text_visible">Размер: 56</p>
                                 </div>
                             </div>
                         </div>
@@ -212,6 +218,10 @@
                         <div class="basket__product-data">
                             <div class="basket__container-img">
                                 <img class="basket__img basket__img_color" src="./image/foto2.svg" alt="foto">
+                                <input class="basket__checkbox basket__checkbox_black" type="checkbox">
+                                <div class="basket__size">
+                                    <p class="basket__text-size">56/54/52...</p>
+                                </div>
                             </div>
                             <div class="basket__product-container">
                                 <h2 class="basket__product-title basket__text_color">Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные,Faber-Castell</h2>
@@ -236,26 +246,34 @@
                     </div>
                     <div class="basket__info-delivery">
                         <div class="basket__data-delivery">
-                            <p class="basket__article-header basket__margin_bottom-16">Пункт выдачи</p>
-                            <p class="basket__article-header basket__margin_bottom-16">Стоимость доставки</p>
-                            <p class="basket__article-header basket__margin_bottom-16">5—6 февраля</p>
-                            <p class="basket__article-header basket__margin_bottom-16">7—8 февраля</p>
-                        </div>
-                        <div class="basket__item-delivery">
-                            <div>
-                                <p class="basket__product-title basket__margin_bottom-4">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
-                                <div class="basket__container-star">
-                                    <img src="./image/star.svg" alt="star">
-                                    <p class="basket__text-payment basket__margin_left-4">4.99</p>
-                                    <p class="basket__text-delivery">Ежедневно с 10 до 21 </p>
+                            <div class="basket__item-delivery">
+                                <p class="basket__article-header">Пункт выдачи</p>
+                                <div>
+                                    <p class="basket__product-title basket__margin_bottom-4">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+                                    <div class="basket__container-star">
+                                        <img src="./image/star.svg" alt="star">
+                                        <p class="basket__text-payment basket__margin_left-4">4.99</p>
+                                        <p class="basket__text-delivery">Ежедневно с 10 до 21 </p>
+                                    </div>
                                 </div>
                             </div>
-                            <p class="basket__product-title">Бесплатно</p>
-                            <div class="basket__cintainer-img">
-                                <img src="./image/foto1.svg" alt="">
-                                <img src="./image/foto3.svg" alt="">
-                                <img src="./image/foto2.svg" alt="">
-                                <img src="./image/foto3.svg" alt="">
+                            <div class="basket__item-delivery">
+                                <p class="basket__article-header">Стоимость доставки</p>
+                                <p class="basket__product-title">Бесплатно</p>
+                            </div>
+                            <div class="basket__item-delivery">
+                                <p class="basket__article-header">5—6 февраля</p>
+                                <div class="basket__container-img-product">
+                                    <img class="basket__img-product" src="./image/foto1.svg" alt="">
+                                    <img class="basket__img-product" src="./image/foto3.svg" alt="">
+                                    <img class="basket__img-product" src="./image/foto2.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="basket__item-delivery">
+                                <p class="basket__article-header">7—8 февраля</p>
+                                <div class="basket__container-img-product">
+                                    <img class="basket__img-product" src="./image/foto3.svg" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -375,6 +393,18 @@
         <div class="footer__bg"></div>
         <p class="footer__text">© 2022  ООО «Товары и точка»</p>
     </footer>
-    <script src='./script/script.js'></script>
+    <div class="tabbar">
+        <button class="tabbar__button tabbar__button_union"></button>
+        <button class="tabbar__button tabbar__button_catalog"></button>
+        <button class="tabbar__button tabbar__button_cart"></button>
+        <button class="tabbar__button tabbar__button_like"></button>
+        <button class="tabbar__button tabbar__button_profile"></button>
+    </div>
+    <div class="popup">
+        <div class="popup__free">
+            <p class="popup__text">Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</p>
+        </div>
+    </div>
+    <script src='./index.js'></script>
 </body>
 </html>

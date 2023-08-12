@@ -1,0 +1,11 @@
+.tabbar__button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    background-size: contain;
+}

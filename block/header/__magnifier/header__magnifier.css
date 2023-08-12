@@ -2,8 +2,9 @@
     display: none;
     background-image: url(../../../image/magnifier.svg);
     background-repeat: no-repeat;
-    width: 28px;
+    max-width: 28px;
     height: 28px;
+    width: 100%;
     background-color: transparent;
     cursor: pointer;
     border: none;
@@ -11,7 +12,7 @@
     background-position: center;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1020px) {
     .header__magnifier {
         display: block;
     }

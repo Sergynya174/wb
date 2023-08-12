@@ -1,11 +1,14 @@
 .basket__count-container{
     margin-right: 16px;
+    width: 100px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1020px) {
     .basket__count-container {
       display: flex;
       margin-right: 0;
       align-items: center;
+      width: 100%;
+      justify-content: space-between;
     }
 }

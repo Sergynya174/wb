@@ -8,3 +8,10 @@
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 1020px) {
+    .basket__count-number {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

@@ -1,0 +1,5 @@
+.basket__container-img-product{
+    display: flex;
+    height: 56px;
+    gap: 8px;
+}

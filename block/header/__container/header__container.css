@@ -6,9 +6,10 @@
      height: 88px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1020px) {
     .header__container {
         height: 56px;
         padding: 14px;
+        justify-content: space-between;
     }
 }

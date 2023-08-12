@@ -4,18 +4,19 @@
     cursor: pointer;
     background-image: url(../../../image/burger-menu.svg);
     background-repeat: no-repeat;
-    width: 48px;
+    max-width: 48px;
     height: 48px;
+    width: 100%;
     background-position: center;
     padding: 0;
     background-size: contain;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1020px) {
     .header__burger-menu {
       background-image: url(../../../image/burger-menu-320.svg);
-      width: 28px;
+      max-width: 28px;
       height: 28px;
-      background-size: none;
+      background-size: auto;
     }
 }

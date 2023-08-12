@@ -5,7 +5,11 @@
     justify-content: space-between;
 }
 
-@media (max-width: 1024px) {
+.basket__product:last-of-type{
+  margin: 0;
+}
+
+@media (max-width: 1020px) {
     .basket__product {
       flex-direction: column;
       border-top: 1px solid rgba(00, 00, 00, 10%);

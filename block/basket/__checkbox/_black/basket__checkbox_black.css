@@ -1,0 +1,9 @@
+.basket__checkbox_black{
+    display: none;
+}
+
+@media (max-width: 1020px) {
+    .basket__checkbox_black {
+      display: block;
+    }
+}

@@ -1,8 +1,8 @@
 .basket__container{
-    margin-bottom: 0;
+    margin-bottom: 40px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1020px) {
     .basket__container{
         padding: 0 16px;
     }

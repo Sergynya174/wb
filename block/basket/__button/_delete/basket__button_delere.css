@@ -3,3 +3,7 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.basket__button_delete:hover{
+    background-image: url(../../../../image/delete-red.svg);
+}

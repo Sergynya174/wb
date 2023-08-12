@@ -10,7 +10,7 @@
     width: 80%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1020px) {
     .header__container-input {
         display: none;
     }

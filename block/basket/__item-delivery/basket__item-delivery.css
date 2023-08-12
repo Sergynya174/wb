@@ -1,0 +1,14 @@
+.basket__item-delivery{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 1020px) {
+    .basket__item-delivery {
+      flex-direction: column;
+    }
+
+    .basket__item-delivery:last-of-type {
+      margin-bottom: 0;
+    }
+}

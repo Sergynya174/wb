@@ -5,7 +5,7 @@
     padding: 0 17px 0 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1020px) {
     .header__container-button {
         display: none;
     }

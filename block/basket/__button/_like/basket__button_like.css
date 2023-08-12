@@ -4,3 +4,7 @@
     background-position: center;
     margin-right: 16px;
 }
+
+.basket__button_like:hover{
+    background-image: url(../../../../image/like-pink.svg);
+}

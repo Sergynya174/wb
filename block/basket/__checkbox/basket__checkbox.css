@@ -1,5 +1,5 @@
 .basket__checkbox{
-    width: 22px;
+    min-width: 22px;
     height: 22px;
     accent-color: #CB11AB;
     margin-right: 11px;
@@ -9,10 +9,11 @@
     align-self: center;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1020px) {
     .basket__checkbox {
       position: absolute;
       top: 4px;
       left: 4px;
+      margin-right: 0;
     }
 }

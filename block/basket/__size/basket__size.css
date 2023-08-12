@@ -1,0 +1,19 @@
+.basket__size{
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    max-width: 72px;
+    height: 22px;
+    display: none;
+    padding: 0 3px 2.5px;
+    box-sizing: border-box;
+    min-width: 22px;
+}
+
+@media (max-width: 1020px) {
+    .basket__size {
+        display: block;
+    }
+}
