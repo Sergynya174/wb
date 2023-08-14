@@ -74,7 +74,7 @@ const handleCheckOrder = () => {
 };
 
 const openPopup = (evt) => {
-  evt.target.id !== penDelivery.id
+  evt.target.id !== penDelivery.id && evt.target.id !== textBtnDelivery.id
     ? popupPayment.classList.add("popup_opened")
     : popupDevilery.classList.add("popup_opened");
 };
