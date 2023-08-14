@@ -5,4 +5,11 @@
     line-height: 16px;
     text-decoration-style: solid;
     text-decoration: line-through;
+    cursor: pointer;
+}
+
+@media (max-width: 1020px) {
+    .basket__price {
+        letter-spacing: -1px;
+    }
 }

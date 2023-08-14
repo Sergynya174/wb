@@ -35,8 +35,9 @@
             <div class="basket__container">
                 <div class="basket__availability">
                     <div class="basket__container-checkbox">
+                        <p class="basket__count-product">266 товаров · 2 100 569 сом</p>
                         <div class="basket__container-label">
-                            <input class="basket__checkbox basket__checkbox_position" type="checkbox">
+                            <input class="basket__checkbox basket__checkbox_position" type="checkbox" id="all">
                             <label class="basket__label">Выбрать все</label>
                         </div>
                         <img class="basket__arrow" id="arrowOne" src="./image/arrow-top.svg" alt="arrow">
@@ -45,13 +46,17 @@
                         <article class="basket__product">
                             <div class="basket__product-data">
                                 <div class="basket__container-img">
-                                    <input class="basket__checkbox" type="checkbox">
+                                    <input class="basket__checkbox" type="checkbox" id="check">
                                     <img class="basket__img" src="./image/foto1.svg" alt="foto">
                                     <div class="basket__size">
                                         <p class="basket__text-size">56</p>
                                     </div>
                                 </div>
                                 <div class="basket__product-container">
+                                    <div class="basket__container-price basket__container-price_mobile">
+                                        <p class="basket__price-new">522 <span class="basket__price-span">сом</span></p>
+                                        <del class="basket__price">1051 сом</del>
+                                    </div>
                                     <h2 class="basket__product-title">Футболка UZcotton мужская</h2>
                                     <div class="basket__specifications">
                                         <p class="basket__text basket__text_margin-right">Цвет: белый</p>
@@ -69,7 +74,7 @@
                             <div class="basket__info">
                                 <div class="basket__count-container">
                                     <div class="basket__count">
-                                        <button class="basket__button-count basket__button-count_minus"></button>
+                                        <button class="basket__button-count basket__button-count_minus basket__button-count_opacity"></button>
                                         <p class="basket__count-number">1</p>
                                         <button class="basket__button-count basket__button-count_plus"></button>
                                     </div>
@@ -80,7 +85,7 @@
                                     </div>
                                 </div>
                                 <div class="basket__container-price">
-                                        <p class="basket__price-new">522 <span class="basket__price-span">сом</span></p>
+                                    <p class="basket__price-new">522 <span class="basket__price-span">сом</span></p>
                                     <del class="basket__price">1051 сом</del>
                                 </div>
                             </div>
@@ -88,10 +93,14 @@
                         <article class="basket__product">
                             <div class="basket__product-data">
                                 <div class="basket__container-img">
-                                    <input class="basket__checkbox" type="checkbox">
+                                    <input class="basket__checkbox" type="checkbox" id="check">
                                     <img class="basket__img" src="./image/foto3.svg" alt="foto">
                                 </div>
                                 <div class="basket__product-container">
+                                    <div class="basket__container-price basket__container-price_mobile">
+                                        <p class="basket__price-new">2 100 047 <span class="basket__price-span">сом</span></p>
+                                        <del class="basket__price">2 300 047 сом</del>
+                                    </div>
                                     <h2 class="basket__product-title">Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</h2>
                                     <div class="basket__specifications">
                                         <p class="basket__text basket__text_margin-right">Цвет: прозрачный</p>
@@ -118,7 +127,7 @@
                                     </div>
                                 </div>
                                 <div class="basket__container-price">
-                                        <p class="basket__price-new basket__price-new_size">2 100 047 <span class="basket__price-span">сом</span></p>
+                                    <p class="basket__price-new basket__price-new_size">2 100 047 <span class="basket__price-span">сом</span></p>
                                     <del class="basket__price">2 300 047 сом</del>
                                 </div>
                             </div>
@@ -126,10 +135,14 @@
                         <article class="basket__product">
                             <div class="basket__product-data">
                                 <div class="basket__container-img">
-                                    <input class="basket__checkbox" type="checkbox">
+                                    <input class="basket__checkbox" type="checkbox" id="check">
                                     <img class="basket__img" src="./image/foto2.svg" alt="foto">
                                 </div>
                                 <div class="basket__product-container">
+                                    <div class="basket__container-price basket__container-price_mobile">
+                                        <p class="basket__price-new">494 <span class="basket__price-span">сом</span></p>
+                                        <del class="basket__price">950 сом</del>
+                                    </div>
                                     <h2 class="basket__product-title">Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные,Faber-Castell</h2>
                                     <div>
                                         <p class="basket__text basket__text_store">Коледино WB</p>
@@ -145,7 +158,7 @@
                                     <div class="basket__count">
                                         <button class="basket__button-count basket__button-count_minus"></button>
                                         <p class="basket__count-number">2</p>
-                                        <button class="basket__button-count basket__button-count_plus"></button>
+                                        <button class="basket__button-count basket__button-count_plus basket__button-count_opacity"></button>
                                     </div>
                                     <span class="basket__text basket__text_red">Осталось 2 шт.</span>
                                     <div class="basket__button-container">
@@ -154,7 +167,7 @@
                                     </div>
                                 </div>
                                 <div class="basket__container-price">
-                                        <p class="basket__price-new">494 <span class="basket__price-span">сом</span></p>
+                                    <p class="basket__price-new">494 <span class="basket__price-span">сом</span></p>
                                     <del class="basket__price">950 сом</del>
                                 </div>
                             </div>
@@ -242,7 +255,7 @@
                 <div class="basket__delivery">
                     <div class="basket__container-delivery">
                         <h2 class="basket__subtitle">Способ доставки</h2>
-                        <button class="basket__change">Изменить</button>
+                        <button class="basket__change" id="textButtonDelivery">Изменить</button>
                     </div>
                     <div class="basket__info-delivery">
                         <div class="basket__data-delivery">
@@ -279,17 +292,22 @@
                     </div>
                     <div class="basket__refund-info">
                         <img src="./image/check-mark.svg" alt="check mark">
-                        <p class="basket__text-delivery">Обратная доставка товаров на склад при отказе —<span class="basket__text-delivery basket__text_green">бесплатно</span></p>
+                        <p class="basket__text-delivery">Обратная доставка товаров на склад при отказе —<span class="basket__text-delivery basket__text_green" id="mouseBasket">бесплатно</span></p>
+                    </div>
+                    <div class="tooltip" id="tooltipFree">
+                        <div class="tooltip__free">
+                            <p class="tooltip__text">Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="basket__decoration">
                 <div class="basket__container-delivery">
                     <h2 class="basket__subtitle">Способ оплаты</h2>
-                    <button class="basket__change">Изменить</button>
+                    <button class="basket__change" id="textButtonPayment">Изменить</button>
                 </div>
                 <div class="basket__payment-sistem">
-                    <img src="./image/payment-system.svg" alt="payment system">
+                    <img src="./image/mir.svg" alt="payment system">
                     <p class="basket__payment-number">1234 56•• •••• 1234 <span class="basket__payment-number-span">01/30</span></p>
                 </div>
                 <p class="basket__text-payment basket__text_color">Спишем оплату с карты при получении</p>
@@ -332,7 +350,7 @@
                 <div class="total__sum">
                     <div class="total__container-subtitle">
                         <h2 class="total__subtitle">Итого</h2>
-                        <h2 class="total__subtitle">2 101 063 <span class="total__span">сом</span></h2>
+                        <h2 class="total__subtitle" id="totalSum">2 101 063 <span class="total__span">сом</span></h2>
                     </div>
                     <div class="total__container-text">
                         <p class="total__text">203 товара</p>
@@ -350,27 +368,27 @@
                 <div class="total__sum">
                     <div class="total__container-title">
                         <h4 class="total__article-header">Доставка в пункт выдачи</h4>
-                        <button class="total__button-pen"></button>
+                        <button class="total__button-pen" id="penDelivery"></button>
                     </div>
                     <p class="basket__text-delivery basket__margin_bottom-4">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
                     <p class="total__date">5–8 фев</p>
                     <div class="total__refund-info">
                         <img src="./image/check-mark.svg" alt="check mark">
-                        <p class="basket__text-delivery">Обратная доставка товаров на склад при отказе —<span class="basket__text-delivery basket__text_green">бесплатно</span></p>
+                        <p class="basket__text-delivery">Обратная доставка товаров на склад при отказе —<span class="basket__text-delivery basket__text_green" id="mouseTotal">бесплатно</span></p>
                     </div>
                 </div>
                 <div class="total__sum">
                     <div class="total__container-title">
                         <h4 class="total__article-header">Оплата картой</h4>
-                        <button class="total__button-pen"></button>
+                        <button class="total__button-pen" id="penPayment"></button>
                     </div>
                     <div class="total__payment-sistem">
-                        <img src="./image/payment-system.svg" alt="payment system">
+                        <img src="./image/mir.svg" alt="payment system">
                         <p class="total__payment-number">1234 56•• •••• 1234</p>
                     </div>
                     <div class="total__container">
                         <div class="total__container-checkbox total__container-checkbox_center">
-                            <input class="basket__checkbox basket__margin_right-8 basket__checkbox_position" type="checkbox">
+                            <input class="basket__checkbox basket__margin_right-8 basket__checkbox_position" type="checkbox" id="orderCheck">
                             <p class="basket__text-delivery basket__margin_0">Списать оплату сразу</p>
                         </div>
                         <p class="basket__text-delivery basket__margin_0">Спишем оплату с карты при получении</p>
@@ -400,10 +418,69 @@
         <button class="tabbar__button tabbar__button_like"></button>
         <button class="tabbar__button tabbar__button_profile"></button>
     </div>
-    <div class="popup">
-        <div class="popup__free">
-            <p class="popup__text">Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</p>
-        </div>
+    <div class='popup' id='popupPayment'>
+        <form class='popup__container-payment'>
+            <h3 class="popup__title">Способ оплаты</h3>
+            <button class='popup__close-btn' aria-label='Закрыть' type='button' id="closePayment"></button>
+            <div class="popup__container-sistem">
+                <div class="popup__sistem-payment">
+                    <input type="radio" class="popup__input" name="payment-sistem" checked>
+                    <img src="./image/mir.svg" alt="" class="popup__img">
+                    <p class="popup__text">1234 56•• •••• 1234</p>
+                </div>
+                <div class="popup__sistem-payment">
+                    <input type="radio" class="popup__input" name="payment-sistem">
+                    <img src="./image/visa.svg" alt="" class="popup__img">
+                    <p class="popup__text">1234 56•• •••• 1234</p>
+                </div>
+                <div class="popup__sistem-payment">
+                    <input type="radio" class="popup__input" name="payment-sistem">
+                    <img src="./image/mastercard.svg" alt="" class="popup__img">
+                    <p class="popup__text">1234 56•• •••• 1234</p>
+                </div>
+                <div class="popup__sistem-payment">
+                    <input type="radio" class="popup__input" name="payment-sistem">
+                    <img src="./image/maestro.svg" alt="" class="popup__img">
+                    <p class="popup__text">1234 56•• •••• 1234</p>
+                </div>
+            </div>
+            <button class="popup__button" id="buttonPayment">Выбрать</button>
+        </form>
+    </div>
+    <div class='popup' id='popupDelivery'>
+        <form class='popup__container-delivery'>
+            <h3 class="popup__title">Способ доставки</h3>
+            <button class='popup__close-btn' aria-label='Закрыть' type='button' id="closeDelivery"></button>
+            <div class="popup__container-button">
+                <button class="popup__button-checked popup__button-checked_opacite">В пункт выдачи</button>
+                <button class="popup__button-checked">Курьером</button>
+            </div>
+            <div class="popup__container-addresses">
+                <h4 class="popup__subtitle">Мои адреса</h4>
+                <div class="popup__container-address">
+                    <div class="popup__address">
+                        <input type="radio" class="popup__input" name="adress">
+                        <p class="popup__text">Бишкек, улица Табышалиева, 57</p>
+                    </div>
+                    <button class="basket__button basket__button_delete"></button>
+                </div>
+                <div class="popup__container-address">
+                    <div class="popup__address">
+                        <input type="radio" class="popup__input" name="adress">
+                        <p class="popup__text">Бишкек, улица Жукеева-Пудовкина, 77/1</p>
+                    </div>
+                    <button class="basket__button basket__button_delete"></button>
+                </div>
+                <div class="popup__container-address">
+                    <div class="popup__address">
+                        <input type="radio" class="popup__input" name="adress">
+                        <p class="popup__text">Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1</p>
+                    </div>
+                    <button class="basket__button basket__button_delete"></button>
+                </div>
+            </div>
+            <button class="popup__button" id="buttonDelivery">Выбрать</button>
+        </form>
     </div>
     <script src='./index.js'></script>
 </body>

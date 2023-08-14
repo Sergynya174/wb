@@ -1,0 +1,12 @@
+.basket__container-price_mobile{
+    display: none;
+}
+
+@media (max-width: 1020px) {
+    .basket__container-price_mobile {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      margin-bottom: 2px;
+    }
+}

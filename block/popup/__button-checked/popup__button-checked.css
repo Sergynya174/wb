@@ -1,0 +1,10 @@
+.popup__button-checked{
+    border: 2px solid #CB11AB;
+    background-color: transparent;
+    border-radius: 24px;
+    max-width: 224px;
+    width: 100%;
+    cursor: pointer;
+    height: 36px;
+    padding: 0;
+}

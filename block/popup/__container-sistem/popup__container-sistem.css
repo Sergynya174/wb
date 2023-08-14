@@ -1,0 +1,7 @@
+.popup__container-sistem{
+    display: flex;
+    flex-direction: column;
+    height: 267px;
+    gap: 16px;
+    margin-bottom: 16px;
+}
