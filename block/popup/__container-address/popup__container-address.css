@@ -1,11 +1,16 @@
 .popup__container-address{
     display: flex;
-    justify-content: space-between;
-    height: 36px;
+    justify-content: space-between;;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .popup__container-address:last-of-type{
     margin: 0;
+}
+
+@media (max-width: 1020px) {
+    .popup__container-address {
+        align-items: start;
+    }
 }

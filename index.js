@@ -4,7 +4,8 @@ const btnOneArray = document.querySelector("#arrowOne");
 const btnTwoArray = document.querySelector("#arrowTwo");
 const mouseOverTotal = document.querySelector("#mouseTotal");
 const mouseOverBasket = document.querySelector("#mouseBasket");
-const tooltipFree = document.querySelector("#popupFree");
+const tooltipFreeTotal = document.querySelector("#toolktipTotal");
+const toolktipFreeBasket = document.querySelector("#toolktipBasket");
 const containerLabel = document.querySelector(".basket__container-label");
 const countProduct = document.querySelector(".basket__count-product");
 const checkAll = document.querySelector("#all");
@@ -21,6 +22,11 @@ const textBtnDelivery = document.querySelector("#textButtonDelivery");
 const btnClosePayment = document.querySelector("#closePayment");
 const btnCloseDelivery = document.querySelector("#closeDelivery");
 const btnSubmitPayment = document.querySelector("#buttonPayment");
+const btnSubmitDelivery = document.querySelector("#buttonDelivery");
+const btnCheckDelivery1 = document.querySelector("#btnCheckDelivery-1");
+const btnCheckDelivery2 = document.querySelector("#btnCheckDelivery-2");
+const starContainer = document.querySelectorAll(".popup__container-star");
+const addressText = document.querySelector("#addressText");
 
 const handleClickArray = (evt) => {
   if (evt.target.id === btnOneArray.id) {
@@ -44,17 +50,21 @@ const handleClickArray = (evt) => {
     : (btnTwoArray.src = "./image/arrow-top.svg");
 };
 
-// const openTooltip = (evt) => {
-//   if (evt.target.id === mouseOverTotal.id) {
-//     popupFreeOne.classList.add("popup__open");
-//   }
-// };
+const openTooltip = (evt) => {
+  if (evt.target.id === mouseOverTotal.id) {
+    tooltipFreeTotal.classList.add("total__tooltip_visibility");
+  } else if (evt.target.id === mouseOverBasket.id) {
+    toolktipFreeBasket.classList.add("basket__tooltip_visibility");
+  }
+};
 
-// const closeTooltip = (evt) => {
-//   if (evt.target.id === mouseOverTotal.id) {
-//     popupFree.classList.remove("popup_open");
-//   }
-// };
+const closeTooltip = (evt) => {
+  if (evt.target.id === mouseOverTotal.id) {
+    tooltipFreeTotal.classList.remove("total__tooltip_visibility");
+  } else if (evt.target.id === mouseOverBasket.id) {
+    toolktipFreeBasket.classList.remove("basket__tooltip_visibility");
+  }
+};
 
 const handleCheckAll = () => {
   let arrCheck = Array.from(checkBox);
@@ -80,14 +90,16 @@ const openPopup = (evt) => {
 };
 
 const closePopup = (evt) => {
-  evt.target.id !== btnCloseDelivery.id
+  evt.target.id !== btnCloseDelivery.id &&
+  evt.target.id !== btnSubmitDelivery.id
     ? popupPayment.classList.remove("popup_opened")
     : popupDevilery.classList.remove("popup_opened");
 };
 
 const closeEsc = (evt) => {
   if (evt.key === "Escape") {
-    popupPayment.classList.remove("popup_opened");
+    popupPayment.classList.remove("popup_opened") ||
+      popupDevilery.classList.remove("popup_opened");
   }
 };
 
@@ -95,19 +107,49 @@ const handleSubmitPaymentSistem = (evt) => {
   evt.preventDefault();
 };
 
-btnSubmitPayment.addEventListener("click", handleSubmitPaymentSistem);
+const handleCheckDelivery = (evt) => {
+  evt.preventDefault();
+  if (evt.target.id === btnCheckDelivery1.id) {
+    btnCheckDelivery2.classList.add("popup__button-checked_opacite");
+    btnCheckDelivery1.classList.remove("popup__button-checked_opacite");
+    starContainer.forEach((item, i) => {
+      item.style.display = "flex";
+    });
+  } else if (evt.target.id === btnCheckDelivery2.id) {
+    btnCheckDelivery2.classList.remove("popup__button-checked_opacite");
+    btnCheckDelivery1.classList.add("popup__button-checked_opacite");
+    starContainer.forEach((item, i) => {
+      item.style.display = "none";
+    });
+  }
+};
+
+const handleClickSubmitDelivery = (evt) => {
+  evt.preventDefault();
+  if (evt.target.id === btnSubmitDelivery.id) {
+    closePopup(evt);
+  } else if (evt.target.id === btnSubmitPayment.id) {
+    closePopup(evt);
+  }
+};
+
+btnSubmitPayment.addEventListener("click", handleClickSubmitDelivery);
+btnSubmitDelivery.addEventListener("click", handleClickSubmitDelivery);
+btnCheckDelivery1.addEventListener("click", handleCheckDelivery);
+btnCheckDelivery2.addEventListener("click", handleCheckDelivery);
+btnSubmitPayment.addEventListener("submit", handleSubmitPaymentSistem);
 document.addEventListener("keydown", closeEsc);
-textBtnPayment.addEventListener("click", openPopup);
-textBtnDelivery.addEventListener("click", openPopup);
 btnCloseDelivery.addEventListener("click", closePopup);
 btnClosePayment.addEventListener("click", closePopup);
+textBtnPayment.addEventListener("click", openPopup);
+textBtnDelivery.addEventListener("click", openPopup);
 penPayment.addEventListener("click", openPopup);
 penDelivery.addEventListener("click", openPopup);
 checkOrder.addEventListener("click", handleCheckOrder);
 checkAll.addEventListener("click", handleCheckAll);
-// mouseOverTotal.addEventListener("mouseover", openTooltip);
-// mouseOverBasket.addEventListener("mouseover", openTooltip);
-// mouseOverTotal.addEventListener("mouseout", closeTooltip);
-// mouseOverBasket.addEventListener("mouseout", closeTooltip);
+mouseOverTotal.addEventListener("mouseover", openTooltip);
+mouseOverBasket.addEventListener("mouseover", openTooltip);
+mouseOverTotal.addEventListener("mouseout", closeTooltip);
+mouseOverBasket.addEventListener("mouseout", closeTooltip);
 btnOneArray.addEventListener("click", handleClickArray);
 btnTwoArray.addEventListener("click", handleClickArray);

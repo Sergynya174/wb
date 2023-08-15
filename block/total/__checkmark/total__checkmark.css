@@ -1,0 +1,8 @@
+.total__checkmark{
+    background-image: url(../../../image/check-mark-black.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 13px;
+    height: 24px;
+    width: 100%;
+}

@@ -1,0 +1,18 @@
+.basket__number-label{
+    height: 16px;
+    border-radius: 16px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 18px;
+    position: absolute;
+    top: -8px;
+    right: -4px;
+    min-width: 16px;
+    background-color: #F55123;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0 4px;
+    box-sizing: border-box;
+}

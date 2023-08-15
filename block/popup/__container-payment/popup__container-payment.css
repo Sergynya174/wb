@@ -3,9 +3,18 @@
     flex-direction: column;
     max-width: 430px;
     background-color: #FFFFFF;
-    border-radius: 10px;
+    border-radius: 16px;
     width: 100%;
     position: relative;
     padding: 16px 22px 24px;
     box-sizing: border-box;
+}
+
+@media (max-width: 1020px) {
+    .popup__container-payment {
+      min-height: 594px;
+      padding: 16px;
+      border-radius: 0;
+      justify-content: space-between;
+    }
 }

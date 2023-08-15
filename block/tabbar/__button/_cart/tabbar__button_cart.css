@@ -1,3 +1,4 @@
 .tabbar__button_cart{
     background-image: url(../../../../image/cart.svg);
+    position: relative;
 }
