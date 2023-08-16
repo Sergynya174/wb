@@ -33,6 +33,8 @@ const tooltipPriceMobile = document.querySelector("#tooltipPriceMobile");
 const tooltipPrice = document.querySelector("#tooltipPrice");
 const btnTooltipHelp = document.querySelector("#btnTooltipHelp");
 const tooltipHelp = document.querySelector("#tooltipHelp");
+const inputs = document.querySelectorAll(".basket__input");
+const error = document.querySelector("");
 
 const handleClickArray = (evt) => {
   if (evt.target.id === btnOneArray.id) {
@@ -162,6 +164,19 @@ const openTooltipHelp = () => {
 const closeTooltipHelp = () => {
   tooltipHelp.classList.remove("basket__tooltip-price_visibility");
 };
+
+for (let input of inputs) {
+  input.addEventListener("blur", () => {
+    let rule = this.dataset.rule;
+    let value = this.value;
+
+    switch (rule) {
+      case "number":
+        break;
+    }
+    console.log(rule);
+  });
+}
 
 btnTooltipHelp.addEventListener("mouseover", openTooltipHelp);
 btnTooltipHelp.addEventListener("mouseout", closeTooltipHelp);

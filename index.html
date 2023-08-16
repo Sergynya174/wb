@@ -354,27 +354,42 @@
                 </div>
                 <div class="basket__container-input basket__container-input_name">
                     <div class="basket__input-container">
-                        <input class="basket__input" type="text" id="name" placeholder=" ">
-                        <label class="basket__label-input" for="name">Имя</label>
+                        <div>
+                            <input class="basket__input" type="text" id="name" placeholder=" ">
+                            <label class="basket__label-input" for="name">Имя</label>
+                        </div>
+                        <span class="basket__error-input" id="error-name">Укажите имя</span>
                     </div>
                     <div class="basket__input-container">
-                        <input class="basket__input" type="text" id="surname" placeholder=" ">
-                        <label class="basket__label-input" for="surname">Фамилия</label>
+                        <div>
+                            <input class="basket__input" type="text" id="surname" placeholder=" ">
+                            <label class="basket__label-input" for="surname">Фамилия</label>
+                        </div>
+                        <span class="basket__error-input" id="error-surname">Укажите фамилию</span>
                     </div>
                 </div>
                 <div class="basket__container-input basket__container-input_mail">
                     <div class="basket__input-container">
-                        <input class="basket__input" data-rule="email" type="email" id="email" placeholder=" ">
-                        <label class="basket__label-input" for="email">Почта</label>
+                        <div>
+                            <input class="basket__input" type="email" id="email" placeholder=" ">
+                            <label class="basket__label-input" for="email">Почта</label>
+                        </div>
+                        <span class="basket__error-input">Укажите почту</span>
                     </div>
-                    <div class="basket__input-container">
-                        <input class="basket__input" data-rule="number" type="text" id="number" placeholder=" ">
-                        <label class="basket__label-input" for="number">Телефон</label>
+                    <div class="basket__input-container" id="error-email">
+                        <div>
+                            <input class="basket__input" type="text" id="number" placeholder=" ">
+                            <label class="basket__label-input" for="number">Телефон</label>
+                        </div>
+                        <span class="basket__error-input" id="error-number">Укажите телефон</span>
                     </div>
                     <div class="basket__input-container">
                         <div class="basket__inn-container">
-                            <input class="basket__input" type="text" id="inn" placeholder=" ">
-                            <label class="basket__label-input" data-rule="number" for="inn">ИНН</label>
+                            <div>
+                                <input class="basket__input" type="text" id="inn" placeholder=" ">
+                                <label class="basket__label-input" for="inn">ИНН</label>
+                            </div>
+                            <span class="basket__error-input" id="error-inn">Укажите ИНН</span>
                         </div>
                         <p class="basket__input-text">Для таможенного оформления</p>
                     </div>
