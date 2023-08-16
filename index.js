@@ -34,7 +34,12 @@ const tooltipPrice = document.querySelector("#tooltipPrice");
 const btnTooltipHelp = document.querySelector("#btnTooltipHelp");
 const tooltipHelp = document.querySelector("#tooltipHelp");
 const inputs = document.querySelectorAll(".basket__input");
-const error = document.querySelector("");
+const errorName = document.querySelector("#error-name");
+const errorSurname = document.querySelector("#error-surname");
+const errorEmail = document.querySelector("#error-email");
+const errorNumber = document.querySelector("#error-number");
+const errorInn = document.querySelector("#error-inn");
+const submitOrder = document.querySelector(".total__button");
 
 const handleClickArray = (evt) => {
   if (evt.target.id === btnOneArray.id) {
@@ -165,18 +170,84 @@ const closeTooltipHelp = () => {
   tooltipHelp.classList.remove("basket__tooltip-price_visibility");
 };
 
-for (let input of inputs) {
-  input.addEventListener("blur", () => {
-    let rule = this.dataset.rule;
-    let value = this.value;
+const validatePhone = (phone) => {
+  let re = /^[0-9\s]*$/;
+  return re.test(String(phone));
+};
 
-    switch (rule) {
+const validateEmail = (email) => {
+  let re =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+};
+
+const validateInn = (inn) => {
+  let re = /^[0-9\s]*$/;
+  return re.test(String(inn));
+};
+
+inputs.forEach((item) => {
+  item.addEventListener("blur", () => {
+    let value = item.value;
+
+    switch (item.id) {
+      case "name":
+        if (item.value === "") {
+          item.style.borderBottom = "1px solid #F55123";
+          item.style.color = "#F55123";
+          errorName.classList.add("basket__error-input_visibility");
+        } else {
+          item.style.borderBottom = "1px solid rgba(00, 00, 00, 20%)";
+          item.style.color = "black";
+          errorName.classList.remove("basket__error-input_visibility");
+        }
+        break;
+      case "surname":
+        if (item.value === "") {
+          item.style.borderBottom = "1px solid #F55123";
+          item.style.color = "#F55123";
+          errorSurname.classList.add("basket__error-input_visibility");
+        } else {
+          item.style.borderBottom = "1px solid rgba(00, 00, 00, 20%)";
+          item.style.color = "black";
+          errorSurname.classList.remove("basket__error-input_visibility");
+        }
+        break;
+      case "email":
+        if (!validateEmail(value)) {
+          item.style.borderBottom = "1px solid #F55123";
+          item.style.color = "#F55123";
+          errorEmail.classList.add("basket__error-input_visibility");
+        } else {
+          item.style.borderBottom = "1px solid rgba(00, 00, 00, 20%)";
+          item.style.color = "black";
+          errorEmail.classList.remove("basket__error-input_visibility");
+        }
+        break;
       case "number":
+        if (!validatePhone(value)) {
+          item.style.borderBottom = "1px solid #F55123";
+          item.style.color = "#F55123";
+          errorNumber.classList.add("basket__error-input_visibility");
+        } else {
+          item.style.borderBottom = "1px solid rgba(00, 00, 00, 20%)";
+          item.style.color = "black";
+          errorNumber.classList.remove("basket__error-input_visibility");
+        }
+        break;
+      case "inn":
+        if (!validateInn(value)) {
+          item.style.borderBottom = "1px solid #F55123";
+          errorInn.classList.add("basket__error-input_visibility");
+        } else {
+          item.style.borderBottom = "1px solid rgba(00, 00, 00, 20%)";
+          item.style.color = "black";
+          errorInn.classList.remove("basket__error-input_visibility");
+        }
         break;
     }
-    console.log(rule);
   });
-}
+});
 
 btnTooltipHelp.addEventListener("mouseover", openTooltipHelp);
 btnTooltipHelp.addEventListener("mouseout", closeTooltipHelp);

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Товары и точка</title>
-    <link rel='stylesheet' href='index.css'>
+    <link rel='stylesheet' href='./index.css'>
 </head>
 <body class="body">
     <header class="header">
@@ -374,7 +374,7 @@
                             <input class="basket__input" type="email" id="email" placeholder=" ">
                             <label class="basket__label-input" for="email">Почта</label>
                         </div>
-                        <span class="basket__error-input">Укажите почту</span>
+                        <span class="basket__error-input" id="error-email">Укажите почту</span>
                     </div>
                     <div class="basket__input-container" id="error-email">
                         <div>
@@ -448,7 +448,7 @@
                 </div>
             </div>
             <div class="total__button-container">
-                <button class="total__button">Заказать</button>
+                <button class="total__button" type="submit">Заказать</button>
                 <div class="total__container-checkbox basket__margin_0">
                     <span class="total__checkmark"></span>
                     <p class="basket__text-delivery">Соглашаюсь с правилами пользования торговой площадкой и возврата</p>

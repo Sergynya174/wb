@@ -87,6 +87,7 @@
 @import url(./block/basket/__item-delivery/basket__item-delivery.css);
 @import url(./block/basket/__input/basket__inpyt.css);
 @import url(./block/basket/__error-input/basket__error-input.css);
+@import url(./block/basket/__error-input/_visibility/basket__error-input_visibility.css);
 @import url(./block/basket/__label/basket__label.css);
 @import url(./block/basket/__label-input/basket__label-input.css);
 @import url(./block/basket/__input-text/basket__input-text.css);
