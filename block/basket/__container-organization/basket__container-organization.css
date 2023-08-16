@@ -1,5 +1,6 @@
 .basket__container-organization{
     display: flex;
+    position: relative;
 }
 
 @media (max-width: 1020px) {

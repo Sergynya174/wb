@@ -27,6 +27,12 @@ const btnCheckDelivery1 = document.querySelector("#btnCheckDelivery-1");
 const btnCheckDelivery2 = document.querySelector("#btnCheckDelivery-2");
 const starContainer = document.querySelectorAll(".popup__container-star");
 const addressText = document.querySelector("#addressText");
+const mouseOverSaleMobile = document.querySelector("#tooltipPriceTextMobile");
+const mouseOverSale = document.querySelector("#tooltipPriceText");
+const tooltipPriceMobile = document.querySelector("#tooltipPriceMobile");
+const tooltipPrice = document.querySelector("#tooltipPrice");
+const btnTooltipHelp = document.querySelector("#btnTooltipHelp");
+const tooltipHelp = document.querySelector("#tooltipHelp");
 
 const handleClickArray = (evt) => {
   if (evt.target.id === btnOneArray.id) {
@@ -133,6 +139,36 @@ const handleClickSubmitDelivery = (evt) => {
   }
 };
 
+const openTooltipSale = (evt) => {
+  if (evt.target.id === mouseOverSale.id) {
+    tooltipPrice.classList.add("basket__tooltip-price_visibility");
+  } else if (evt.target.id === mouseOverSaleMobile.id) {
+    tooltipPriceMobile.classList.add("basket__tooltip-price_visibility");
+  }
+};
+
+const closeTooltipSale = (evt) => {
+  if (evt.target.id === mouseOverSale.id) {
+    tooltipPrice.classList.remove("basket__tooltip-price_visibility");
+  } else if (evt.target.id === mouseOverSaleMobile.id) {
+    tooltipPriceMobile.classList.remove("basket__tooltip-price_visibility");
+  }
+};
+
+const openTooltipHelp = () => {
+  tooltipHelp.classList.add("basket__tooltip-price_visibility");
+};
+
+const closeTooltipHelp = () => {
+  tooltipHelp.classList.remove("basket__tooltip-price_visibility");
+};
+
+btnTooltipHelp.addEventListener("mouseover", openTooltipHelp);
+btnTooltipHelp.addEventListener("mouseout", closeTooltipHelp);
+mouseOverSale.addEventListener("mouseover", openTooltipSale);
+mouseOverSale.addEventListener("mouseout", closeTooltipSale);
+mouseOverSaleMobile.addEventListener("mouseover", openTooltipSale);
+mouseOverSaleMobile.addEventListener("mouseout", closeTooltipSale);
 btnSubmitPayment.addEventListener("click", handleClickSubmitDelivery);
 btnSubmitDelivery.addEventListener("click", handleClickSubmitDelivery);
 btnCheckDelivery1.addEventListener("click", handleCheckDelivery);

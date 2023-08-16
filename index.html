@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Товары и точка</title>
-    <link rel='stylesheet' href='./index.css'>
+    <link rel='stylesheet' href='index.css'>
 </head>
 <body class="body">
     <header class="header">
@@ -102,7 +102,17 @@
                                 <div class="basket__product-container">
                                     <div class="basket__container-price basket__container-price_mobile">
                                         <p class="basket__price-new">2 100 047 <span class="basket__price-span">сом</span></p>
-                                        <del class="basket__price">2 300 047 сом</del>
+                                        <del class="basket__price" id="tooltipPriceTextMobile">2 300 047 сом</del>
+                                        <div class="basket__tooltip-price" id="tooltipPriceMobile">
+                                            <div class="basket__container-tooltip">
+                                                <p class="basket__tooltip-text basket__tooltip-text_color">Скидка 55%</p>
+                                                <p class="basket__tooltip-text basket__tooltip-text_color">Скидка покупателя 10%</p>
+                                            </div>
+                                            <div class="basket__container-tooltip basket__container-tooltip_end">
+                                                <p class="basket__tooltip-text">-300 сом</p>
+                                                <p class="basket__tooltip-text">-30 сом</p>
+                                            </div>
+                                        </div>
                                     </div>
                                     <h2 class="basket__product-title">Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</h2>
                                     <div class="basket__specifications">
@@ -112,7 +122,12 @@
                                         <p class="basket__text basket__text_store">Коледино WB</p>
                                         <div class="basket__container-organization">
                                             <p class="basket__text basket__text_store-organization">OOO Мегапрофстиль</p>
-                                            <span class="basket__help"></span>
+                                            <span class="basket__help" id="btnTooltipHelp"></span>
+                                            <div class="basket__tooltip-help" id="tooltipHelp">
+                                                <h5 class="basket__tooltip-title">OOO «МЕГАПРОФСТИЛЬ»</h5>
+                                                <p class="basket__tooltip-text">ОГРН: 5167746237148</p>
+                                                <p class="basket__tooltip-text">129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -131,7 +146,17 @@
                                 </div>
                                 <div class="basket__container-price">
                                     <p class="basket__price-new basket__price-new_size">2 100 047 <span class="basket__price-span">сом</span></p>
-                                    <del class="basket__price">2 300 047 сом</del>
+                                    <del class="basket__price" id="tooltipPriceText">2 300 047 сом</del>
+                                    <div class="basket__tooltip-price" id="tooltipPrice">
+                                        <div class="basket__container-tooltip">
+                                            <p class="basket__tooltip-text basket__tooltip-text_color">Скидка 55%</p>
+                                            <p class="basket__tooltip-text basket__tooltip-text_color">Скидка покупателя 10%</p>
+                                        </div>
+                                        <div class="basket__container-tooltip basket__container-tooltip_end">
+                                            <p class="basket__tooltip-text">-300 сом</p>
+                                            <p class="basket__tooltip-text">-30 сом</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </article>
@@ -339,17 +364,17 @@
                 </div>
                 <div class="basket__container-input basket__container-input_mail">
                     <div class="basket__input-container">
-                        <input class="basket__input" type="email" id="email" placeholder=" ">
+                        <input class="basket__input" data-rule="email" type="email" id="email" placeholder=" ">
                         <label class="basket__label-input" for="email">Почта</label>
                     </div>
                     <div class="basket__input-container">
-                        <input class="basket__input" type="text" id="number" placeholder=" ">
+                        <input class="basket__input" data-rule="number" type="text" id="number" placeholder=" ">
                         <label class="basket__label-input" for="number">Телефон</label>
                     </div>
                     <div class="basket__input-container">
                         <div class="basket__inn-container">
                             <input class="basket__input" type="text" id="inn" placeholder=" ">
-                            <label class="basket__label-input" for="inn">ИНН</label>
+                            <label class="basket__label-input" data-rule="number" for="inn">ИНН</label>
                         </div>
                         <p class="basket__input-text">Для таможенного оформления</p>
                     </div>

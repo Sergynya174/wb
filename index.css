@@ -119,6 +119,14 @@
 @import url(./block/total/__checkmark/total__checkmark.css);
 @import url(./block/total/__tooltip/total__tooltip.css);
 @import url(./block/total/__tooltip/_visibility/total__tooltip_visibility.css);
+@import url(./block/basket/__tooltip-price/basket__tooltip-price.css);
+@import url(./block/basket/__tooltip-help/basket__tooltip-help.css);
+@import url(./block/basket/__tooltip-title/basket__tooltip-title.css);
+@import url(./block/basket/__tooltip-price/_visibility/basket__tooltip-price_visibility.css);
+@import url(./block/basket/__container-tooltip/basket__container-tooltip.css);
+@import url(./block/basket/__container-tooltip/_end/basket__container-tooltip_end.css);
+@import url(./block/basket/__tooltip-text/basket__tooltip-text.css);
+@import url(./block/basket/__tooltip-text/_color/basket__tooltip-text_color.css);
 @import url(./block/footer/footer.css);
 @import url(./block/footer/__bg/footer__bg.css);
 @import url(./block/footer/__text/footer__text.css);
